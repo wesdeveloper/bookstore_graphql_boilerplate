@@ -41,8 +41,6 @@ npm test
 
 * [GraphQL](https://graphql.org/) - GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
 
-* [Apollo](https://www.apollographql.com/) - The Apollo GraphQL platform is an implementation of GraphQL that helps you manage data from the cloud to your UI. It’s incrementally adoptable and can be layered over your existing services, including REST APIs and databases. Apollo includes two open-source libraries for the client and server, in addition to developer tooling that provides everything you need to run a graph API in production with confidence.
-
 ## Authors
 
 * **Wesley Lopes** - * Software Developer * - [weslopes](https://github.com/weslopes) / [Linkedin](https://www.linkedin.com/in/weslopes/)
