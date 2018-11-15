@@ -15,4 +15,6 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true,
 }));
 
+app.get('/health-status', (req, res) => res.sendStatus(200));
+
 export default app;
