@@ -1,8 +1,7 @@
-const authorsData = [
-  { id: '123', name: 'Machado de Assis', nationality: 'Brasileiro' },
-  { id: '4324', name: 'Cecília Meireles', nationality: 'Brasileira' },
-];
+import Author from './author-model';
 
-export const getAthorById = (_, { id }) => authorsData.find(data => data.id === id);
+const parseId = ({ _id, ...author }) => ({ _id: _id.toString(), ...author });
 
-export const getAllAuthors = () => authorsData;
+export const getAthorById = async (_, { id }) => parseId(await Author.findById({ _id: id }));
+
+export const getAuthors = async () => Author.find({}).then(authors => authors.map(parseId));

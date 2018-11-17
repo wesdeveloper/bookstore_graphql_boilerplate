@@ -1,17 +1,21 @@
 export const types = `
-  type Author {
-    id: String!
+type Author {
+    _id: String!
     name: String
     born: String
     nationality: String
     description: String
     gender: String
-    createdAt: String
-    updatedAt: String
+    createdAt: Date
+    updatedAt: Date
   }
 `;
 
 export const queries = `
   getAthorById(id: String!): Author
-  getAllAuthors: [Author!]
+  getAuthors: [Author]
+`;
+
+export const mutations = `
+  insertOne(name: String, born: String, nationality: String, description: String, gender: String): Author
 `;
